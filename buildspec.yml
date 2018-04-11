@@ -1,0 +1,12 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - mvn package -Dmaven.test.skip=true
+
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/*
+    - target/petclinic.war
